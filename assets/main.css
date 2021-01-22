@@ -33,7 +33,7 @@ a:hover {
     color: #404080;
 }
 
-@media (max-width: 750px) {
+@media (pointer: none) {
     #content {
         margin: 0.5rem 0.5rem;
         width: auto;
