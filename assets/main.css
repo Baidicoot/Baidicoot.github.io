@@ -44,7 +44,7 @@ a:hover {
     color: #404080;
 }
 
-@media (max-width: 750px) {
+@media only screen and (hover: none) and (pointer: coarse) {
     #content {
         margin: 0.5rem;
     }
