@@ -47,6 +47,7 @@ a:hover {
 @media only screen and (hover: none) and (pointer: coarse) {
     #content {
         margin: 0.5rem;
+        width: 100%;
     }
 
     ul.gallery li {
