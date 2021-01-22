@@ -44,7 +44,7 @@ a:hover {
     color: #404080;
 }
 
-@media only screen {
+@media (max-device-width: 750px) {
     #content {
         margin: 0.5rem 0.5rem;
         width: calc(100%-1rem);
