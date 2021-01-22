@@ -44,7 +44,7 @@ a:hover {
     color: #404080;
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
     #content {
         margin: 0.5rem;
     }
