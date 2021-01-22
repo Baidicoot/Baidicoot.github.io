@@ -7,7 +7,7 @@ body {
 }
 
 #content {
-    margin: 1rem 10rem;
+    margin: 1rem 20%;
     width: auto;
 }
 
@@ -31,11 +31,4 @@ a {
 
 a:hover {
     color: #404080;
-}
-
-@media (pointer: none) {
-    #content {
-        margin: 0.5rem 0.5rem;
-        width: auto;
-    }
 }
