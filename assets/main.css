@@ -8,18 +8,7 @@ body {
 
 #content {
     margin: 1rem 10rem;
-    width: calc(100% - 20rem);
-}
-
-.desc {
-    position: absolute;
-    text-align: center;
-    color: white;
-    background-color: #101020B0;
-    box-shadow: 0 -0.25rem 0.25rem #101020B0;
-    width: calc(100% - 2rem);
-    bottom: -1rem;
-    padding: 1rem 1rem;
+    width: auto;
 }
 
 img {
@@ -44,9 +33,9 @@ a:hover {
     color: #404080;
 }
 
-@media (max-width: 750px) {
+@media only screen (hover: none) {
     #content {
         margin: 0.5rem 0.5rem;
-        width: calc(100vw-1rem);
+        width: auto;
     }
 }
