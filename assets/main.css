@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
-body {
-    font-family: 'Roboto Slab', serif;
-    margin: 0;
-    width: 100%;
-}
-
 #content {
     margin: 1rem 10rem;
-    width: auto;
+    font-family: 'Roboto Slab', serif;
 }
 
 img {
@@ -35,7 +29,6 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
     #content {
-        margin: 1rem auto;
-        width: 100%;
+        margin: 1rem 1rem;
     }
 }
