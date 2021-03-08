@@ -17,7 +17,7 @@
         <hr>
         <h2>Viewing IZF.v</h2>
         <p>The source for this file is available <a href="IZF.v">here</a>.</p>
-        <pre><span class="hljs-keyword">Require</span> <span class="hljs-keyword">Import</span> <span class="hljs-keyword">Program</span>.
+        <pre><code><span class="hljs-keyword">Require</span> <span class="hljs-keyword">Import</span> <span class="hljs-keyword">Program</span>.
 
 Create <span class="hljs-keyword">HintDb</span> zf.
 
@@ -100,7 +100,7 @@ Create <span class="hljs-keyword">HintDb</span> zf.
   <span class="hljs-keyword">Parameter</span> ϵ_rec : (<span class="hljs-keyword">forall</span> x, (<span class="hljs-keyword">forall</span> y, y ∈ x -&gt; <span class="hljs-built_in">set</span>) -&gt; <span class="hljs-built_in">set</span>) -&gt; <span class="hljs-built_in">set</span> -&gt; <span class="hljs-built_in">set</span>.  
   <span class="hljs-keyword">Axiom</span> ϵ_rec_prop : <span class="hljs-keyword">forall</span> {H x}, ϵ_rec H x = H x (<span class="hljs-keyword">fun</span> y <span class="hljs-keyword">_</span> =&gt; ϵ_rec H y).
 <span class="hljs-keyword">End</span> IZF.
-</pre>
+</code></pre>
     </div>
 <script src="../../../assets/main.js"></script>
 </body>
