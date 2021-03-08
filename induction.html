@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intuonistic Induction</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+#content {
+    width: 40rem;
+    margin: 1rem auto;
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+a {
+    color: #202080;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #606080;
+}
+
+code, pre {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 95%;
+    line-height: 140%;
+}
+</style>
+<style>
+/*
+Derived from:
+XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
+*/
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #fff;
+    color: black;
+}
+
+.xml .hljs-meta {
+    color: #c0c0c0;
+}
+
+.hljs-comment,
+.hljs-quote {
+    font-style: italic;
+    color: #64766A;
+}
+
+.hljs-tag,
+.hljs-attribute,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-name {
+    font-weight: bold;
+    color: #c030b0;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+    color: #3F6E74;
+}
+
+.hljs-code,
+.hljs-string,
+.hljs-meta-string {
+    color: #d05560;
+}
+
+.hljs-regexp,
+.hljs-link,
+.hljs-title,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-number {
+    color: #647293;
+}
+
+.hljs-section,
+.hljs-meta {
+    color: #9f496e;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-params {
+    color: #5c2699;
+}
+
+.hljs-attr {
+    color: #c34f5a;
+}
+
+.hljs-subst {
+    color: #000;
+}
+
+.hljs-formula {
+    background-color: #eee;
+    font-style: italic;
+}
+
+.hljs-addition {
+    background-color: #baeeba;
+}
+
+.hljs-deletion {
+    background-color: #ffc8bd;
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+    color: #f26659;
+}
+
+.hljs-doctag,
+.hljs-strong {
+    font-weight: 900;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+</style>
+</head>
+<body>
+    <div id="content">
+        <h1><a href="index.html">Aidan Ewart</a></h1>
+        <hr>
+        <pre><code class="language-att"><span class="hljs-comment">(*
+Inductive nat : Type :=
+| Z : nat
+| S : nat -&gt; nat.
+*)</span>
+
+<span class="hljs-keyword">Axiom</span> nat : <span class="hljs-built_in">Type</span><span class="hljs-symbol">.</span>
+<span class="hljs-keyword">Axiom</span> Z : nat<span class="hljs-symbol">.</span>
+<span class="hljs-keyword">Axiom</span> S : nat <span class="hljs-symbol">-&gt;</span> nat<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Axiom</span> rec_nat : <span class="hljs-built_in">forall</span> (P: nat <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">Type</span>), (P Z) <span class="hljs-symbol">-&gt;</span> (<span class="hljs-built_in">forall</span> (n: nat), (P n) <span class="hljs-symbol">-&gt;</span> P (S n)) <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">forall</span> (n: nat), P n<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Reduction</span> ((P: nat <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">Type</span>) (z: P Z) (sn: <span class="hljs-built_in">forall</span> (n: nat), (P n) <span class="hljs-symbol">-&gt;</span> P (S n)))
+    (rec_nat P z sn Z) <span class="hljs-symbol">:=</span> z<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Reduction</span> ((P: nat <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">Type</span>) (z: P Z) (sn: <span class="hljs-built_in">forall</span> (n: nat), (P n) <span class="hljs-symbol">-&gt;</span> P (S n)) (n: nat))
+    (rec_nat P z sn (S n)) <span class="hljs-symbol">:=</span> sn n (rec_nat P z sn n)<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Unfolding</span> rec_nat<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Axiom</span> fin : nat <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">Type</span><span class="hljs-symbol">.</span>
+<span class="hljs-keyword">Axiom</span> finZ : <span class="hljs-built_in">forall</span> (n: nat), fin (S n)<span class="hljs-symbol">.</span>
+<span class="hljs-keyword">Axiom</span> finS : <span class="hljs-built_in">forall</span> (n: nat), (fin n) <span class="hljs-symbol">-&gt;</span> fin (S n)<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Axiom</span> rec_fin :
+    <span class="hljs-built_in">forall</span> (P: <span class="hljs-built_in">forall</span> (n: nat), (fin n) <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">Type</span>),
+    (<span class="hljs-built_in">forall</span> (n: nat), P (S n) (finZ n)) <span class="hljs-symbol">-&gt;</span>
+    (<span class="hljs-built_in">forall</span> (n: nat) (f: fin n), (P n f) <span class="hljs-symbol">-&gt;</span> P (S n) (finS n f)) <span class="hljs-symbol">-&gt;</span>
+    <span class="hljs-built_in">forall</span> (n: nat) (f: fin n), P n f<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Reduction</span>
+    ((P: <span class="hljs-built_in">forall</span> (n: nat), (fin n) <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">Type</span>)
+    (z: <span class="hljs-built_in">forall</span> (n: nat), P (S n) (finZ n))
+    (s: <span class="hljs-built_in">forall</span> (n: nat) (f: fin n), (P n f) <span class="hljs-symbol">-&gt;</span> P (S n) (finS n f))
+    (n: nat))
+    (rec_fin P z s (S n) (finZ n)) <span class="hljs-symbol">:=</span> z n<span class="hljs-symbol">.</span>
+<span class="hljs-keyword">Reduction</span>
+    ((P: <span class="hljs-built_in">forall</span> (n: nat), (fin n) <span class="hljs-symbol">-&gt;</span> <span class="hljs-built_in">Type</span>)
+    (z: <span class="hljs-built_in">forall</span> (n: nat), P (S n) (finZ n))
+    (s: <span class="hljs-built_in">forall</span> (n: nat) (f: fin n), (P n f) <span class="hljs-symbol">-&gt;</span> P (S n) (finS n f))
+    (n: nat)
+    (f: fin n))
+    (rec_fin P z s (S n) (finS n f)) <span class="hljs-symbol">:=</span> s n f (rec_fin P z s n f)<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Unfolding</span> rec_fin<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Definition</span> admit <span class="hljs-symbol">:=</span> <span class="hljs-built_in">forall</span> (a: <span class="hljs-built_in">Type</span>), a<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Definition</span> not_fin_z <span class="hljs-symbol">:=</span>
+    (rec_fin
+        (<span class="hljs-built_in">fun</span> n _ <span class="hljs-symbol">=&gt;</span> rec_nat (<span class="hljs-built_in">fun</span> _ <span class="hljs-symbol">=&gt;</span> <span class="hljs-built_in">Type</span>) admit (<span class="hljs-built_in">fun</span> _ _ <span class="hljs-symbol">=&gt;</span> nat) n)
+        (<span class="hljs-built_in">fun</span> _ <span class="hljs-symbol">=&gt;</span> Z)
+        (<span class="hljs-built_in">fun</span> _ _ _ <span class="hljs-symbol">=&gt;</span> Z)
+        Z) : (fin Z) <span class="hljs-symbol">-&gt;</span> admit<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Compute</span> rec_nat (<span class="hljs-built_in">fun</span> _ <span class="hljs-symbol">=&gt;</span> nat) Z (<span class="hljs-built_in">fun</span> _ p <span class="hljs-symbol">=&gt;</span> S (S p)) (S Z)<span class="hljs-symbol">.</span>
+
+<span class="hljs-keyword">Print</span> <span class="hljs-keyword">All</span><span class="hljs-symbol">.</span></code></pre>
+
+    </div>
+<script src="assets/main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

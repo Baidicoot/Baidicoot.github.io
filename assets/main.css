@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 #content {
-    margin: 1rem 10rem;
+    width: 40rem;
+    margin: 1rem auto;
     font-family: 'Roboto Slab', serif;
+    color: #000;
 }
 
 img {
@@ -19,16 +21,16 @@ img:hover {
 }
 
 a {
-    color: #101020;
+    color: #202080;
     text-decoration: none;
 }
 
 a:hover {
-    color: #404080;
+    color: #606080;
 }
 
-@media only screen and (max-width: 768px) {
-    #content {
-        margin: 1rem 1rem;
-    }
+code, pre {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 95%;
+    line-height: 140%;
 }
