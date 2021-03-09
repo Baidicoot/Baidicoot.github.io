@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 #content {
-    width: 40rem;
+    max-width: 40rem;
     margin: 1rem auto;
     font-family: 'Roboto Slab', serif;
     color: #000;
