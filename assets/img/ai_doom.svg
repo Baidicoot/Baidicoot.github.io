@@ -1,0 +1,152 @@
+<svg height="720" width="1240" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 04/05/2023, 13:16:28 -->
+<rect height="720" width="1240" fill="#ffffff"></rect>
+<g transform="translate(94.9499997329712,18)">
+<g id="sankey_flows">
+<path id="flow0" d="M9 301.94437C116.905 301.94437 116.905 287.55812 224.81 287.55812" fill="none" stroke-width="305.33333" stroke="#17becf" opacity="0.45"><title>Now → No ML-based utility-maximisers: 0.80</title></path>
+<path id="flow2" d="M233.81 211.22479C341.715 211.22479 341.715 160.87292 449.62 160.87292" fill="none" stroke-width="152.66667" stroke="#1f77b4" opacity="0.45"><title>No ML-based utility-maximisers → Short-term aligned ML: 0.40</title></path>
+<path id="flow3" d="M233.81 363.89146C341.715 363.89146 341.715 385.47083 449.62 385.47083" fill="none" stroke-width="152.66667" stroke="#1f77b4" opacity="0.45"><title>No ML-based utility-maximisers → Misaligned ML: 0.40</title></path>
+<path id="flow4" d="M458.62 151.33125C566.525 151.33125 566.525 117.56667 674.43 117.56667" fill="none" stroke-width="133.58333" stroke="#2ca02c" opacity="0.45"><title>Short-term aligned ML → Long-term aligned ML: 0.35</title></path>
+<path id="flow13" d="M458.62 375.92917C566.525 375.92917 566.525 414.09583 674.43 414.09583" fill="none" stroke-width="133.58333" stroke="#d62728" opacity="0.45"><title>Misaligned ML → Terminator scenario: 0.35</title></path>
+<path id="flow7" d="M683.43 127.10833C791.335 127.10833 791.335 191.6349 899.24 191.6349" fill="none" stroke-width="114.5" stroke="#e377c2" opacity="0.45"><title>Long-term aligned ML → ML develops utility-maximisers: 0.30</title></path>
+<path id="flow1" d="M9 492.77771C116.905 492.77771 116.905 550.32271 224.81 550.32271" fill="none" stroke-width="76.33333" stroke="#17becf" opacity="0.45"><title>Now → ML-based utility maximisers: 0.20</title></path>
+<path id="flow10" d="M908.24 163.0099C1016.145 163.0099 1016.145 191.57083 1124.05 191.57083" fill="none" stroke-width="57.25" stroke="#bcbd22" opacity="0.45"><title>ML develops utility-maximisers → utility-maximisers are misaligned: 0.15</title></path>
+<path id="flow11" d="M908.24 220.2599C1016.145 220.2599 1016.145 320.75208 1124.05 320.75208" fill="none" stroke-width="57.25" stroke="#bcbd22" opacity="0.45"><title>ML develops utility-maximisers → utility-maximisers are aligned: 0.15</title></path>
+<path id="flow16" d="M233.81 569.40604C341.715 569.40604 341.715 662.91667 449.62 662.91667" fill="none" stroke-width="38.16667" stroke="#ff7f0e" opacity="0.45"><title>ML-based utility maximisers → ML utility-maximiser is misaligned: 0.10</title></path>
+<path id="flow17" d="M233.81 531.23937C341.715 531.23937 341.715 552.81875 449.62 552.81875" fill="none" stroke-width="38.16667" stroke="#ff7f0e" opacity="0.45"><title>ML-based utility maximisers → ML utility-maximiser is aligned: 0.10</title></path>
+<path id="flow18" d="M458.62 643.83333v38.16667L674.43 682v-38.16667z" fill="#e377c2" stroke-width="0.5" stroke="#e377c2" opacity="0.45"><title>ML utility-maximiser is misaligned → Paperclip scenario: 0.10</title></path>
+<path id="flow5" d="M458.62 227.66458C566.525 227.66458 566.525 265.83125 674.43 265.83125" fill="none" stroke-width="19.08333" stroke="#2ca02c" opacity="0.45"><title>Short-term aligned ML → Sharp left turn: 0.05</title></path>
+<path id="flow6" d="M683.43 60.31667C791.335 60.31667 791.335 42.12229 899.24 42.12229" fill="none" stroke-width="19.08333" stroke="#e377c2" opacity="0.45"><title>Long-term aligned ML → ML stagnates: 0.05</title></path>
+<path id="flow12" d="M458.62 452.2625C566.525 452.2625 566.525 562.36042 674.43 562.36042" fill="none" stroke-width="19.08333" stroke="#d62728" opacity="0.45"><title>Misaligned ML → We win against ML: 0.05</title></path>
+<path id="flow8" d="M908.24 40.21396C1016.145 40.21396 1016.145 7.63333 1124.05 7.63333" fill="none" stroke-width="15.26667" stroke="#e377c2" opacity="0.45"><title>ML stagnates → ML eventually wiped out by alien AGI: 0.04</title></path>
+<path id="flow15" d="M683.43 564.26875C791.335 564.26875 791.335 578.655 899.24 578.655" fill="none" stroke-width="15.26667" stroke="#17becf" opacity="0.45"><title>We win against ML → We rot on Earth: 0.04</title></path>
+<path id="flow9" d="M908.24 49.75563C1016.145 49.75563 1016.145 89.10625 1124.05 89.10625" fill="none" stroke-width="3.81667" stroke="#7f7f7f" opacity="0.45"><title>ML stagnates → Pure ML good ending: 0.01</title></path>
+<path id="flow14" d="M683.43 554.72708C791.335 554.72708 791.335 497.18208 899.24 497.18208" fill="none" stroke-width="3.81667" stroke="#17becf" opacity="0.45"><title>We win against ML → We build aligned utility-maximisers: 0.01</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="149.27771" height="381.66667" width="9" fill="#17becf" fill-opacity="1"><title>Now:
+1.00</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="224.81" y="134.89146" height="305.33333" width="9" fill="#1f77b4" fill-opacity="1"><title>No ML-based utility-maximisers:
+0.80</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="224.81" y="512.15604" height="76.33333" width="9" fill="#ff7f0e" fill-opacity="1"><title>ML-based utility maximisers:
+0.20</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="449.62" y="84.53958" height="152.66667" width="9" fill="#2ca02c" fill-opacity="1"><title>Short-term aligned ML:
+0.40</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="449.62" y="309.1375" height="152.66667" width="9" fill="#d62728" fill-opacity="1"><title>Misaligned ML:
+0.40</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="674.43" y="50.775" height="133.58333" width="9" fill="#9467bd" fill-opacity="1"><title>Long-term aligned ML:
+0.35</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="674.43" y="256.28958" height="19.08333" width="9" fill="#8c564b" fill-opacity="1"><title>Sharp left turn:
+0.05</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="899.24" y="32.58063" height="19.08333" width="9" fill="#e377c2" fill-opacity="1"><title>ML stagnates:
+0.05</title></rect>
+</g>
+<g class="node">
+<rect id="r8" class="for_r8" x="899.24" y="134.3849" height="114.5" width="9" fill="#e377c2" fill-opacity="1"><title>ML develops utility-maximisers:
+0.30</title></rect>
+</g>
+<g class="node">
+<rect id="r9" class="for_r9" x="1124.05" y="0" height="15.26667" width="9" fill="#e377c2" fill-opacity="1"><title>ML eventually wiped out by alien AGI:
+0.04</title></rect>
+</g>
+<g class="node">
+<rect id="r10" class="for_r10" x="1124.05" y="87.19792" height="3.81667" width="9" fill="#7f7f7f" fill-opacity="1"><title>Pure ML good ending:
+0.01</title></rect>
+</g>
+<g class="node">
+<rect id="r11" class="for_r11" x="1124.05" y="162.94583" height="57.25" width="9" fill="#bcbd22" fill-opacity="1"><title>utility-maximisers are misaligned:
+0.15</title></rect>
+</g>
+<g class="node">
+<rect id="r12" class="for_r12" x="1124.05" y="292.12708" height="57.25" width="9" fill="#bcbd22" fill-opacity="1"><title>utility-maximisers are aligned:
+0.15</title></rect>
+</g>
+<g class="node">
+<rect id="r13" class="for_r13" x="674.43" y="552.81875" height="19.08333" width="9" fill="#17becf" fill-opacity="1"><title>We win against ML:
+0.05</title></rect>
+</g>
+<g class="node">
+<rect id="r14" class="for_r14" x="674.43" y="347.30417" height="133.58333" width="9" fill="#1f77b4" fill-opacity="1"><title>Terminator scenario:
+0.35</title></rect>
+</g>
+<g class="node">
+<rect id="r15" class="for_r15" x="899.24" y="495.27375" height="3.81667" width="9" fill="#17becf" fill-opacity="1"><title>We build aligned utility-maximisers:
+0.01</title></rect>
+</g>
+<g class="node">
+<rect id="r16" class="for_r16" x="899.24" y="571.02167" height="15.26667" width="9" fill="#17becf" fill-opacity="1"><title>We rot on Earth:
+0.04</title></rect>
+</g>
+<g class="node">
+<rect id="r17" class="for_r17" x="449.62" y="643.83333" height="38.16667" width="9" fill="#e377c2" fill-opacity="1"><title>ML utility-maximiser is misaligned:
+0.10</title></rect>
+</g>
+<g class="node">
+<rect id="r18" class="for_r18" x="449.62" y="533.73542" height="38.16667" width="9" fill="#e377c2" fill-opacity="1"><title>ML utility-maximiser is aligned:
+0.10</title></rect>
+</g>
+<g class="node">
+<rect id="r19" class="for_r19" x="674.43" y="643.83333" height="38.16667" width="9" fill="#ff7f0e" fill-opacity="1"><title>Paperclip scenario:
+0.10</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="16px" font-weight="400" fill="#000000">
+<text text-anchor="middle" x="525.0500002670288" y="697" font-size="11px" font-weight="400" fill="rgb(127, 127, 127)">Made with SankeyMATIC</text>
+<rect id="label0_bg" class="for_r0" x="-82.95" y="329.66107" width="81.08333" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-6.53333" y="340.11104" dy="5.949999999999999">Now: 1.00</text>
+<rect id="label1_bg" class="for_r1" x="-47.68999" y="277.10812" width="270.63332" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label1" class="for_r1" text-anchor="end" x="218.27667" y="287.55812" dy="5.949999999999999">No ML-based utility-maximisers: 0.80</text>
+<rect id="label2_bg" class="for_r2" x="-22.13999" y="539.87271" width="245.08333" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label2" class="for_r2" text-anchor="end" x="218.27667" y="550.32271" dy="5.949999999999999">ML-based utility maximisers: 0.20</text>
+<rect id="label3_bg" class="for_r3" x="240.23667" y="150.42292" width="207.51667" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label3" class="for_r3" text-anchor="end" x="443.08667" y="160.87292" dy="5.949999999999999">Short-term aligned ML: 0.40</text>
+<rect id="label4_bg" class="for_r4" x="295.23668" y="375.02084" width="152.51667" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label4" class="for_r4" text-anchor="end" x="443.08667" y="385.47083" dy="5.949999999999999">Misaligned ML: 0.40</text>
+<rect id="label5_bg" class="for_r5" x="467.98" y="107.11667" width="204.58333" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label5" class="for_r5" text-anchor="end" x="667.89667" y="117.56667" dy="5.949999999999999">Long-term aligned ML: 0.35</text>
+<rect id="label6_bg" class="for_r6" x="522.48" y="255.38125" width="150.08333" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label6" class="for_r6" text-anchor="end" x="667.89667" y="265.83125" dy="5.949999999999999">Sharp left turn: 0.05</text>
+<rect id="label7_bg" class="for_r7" x="752.75667" y="31.67229" width="144.61667" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label7" class="for_r7" text-anchor="end" x="892.70667" y="42.12229" dy="5.949999999999999">ML stagnates: 0.05</text>
+<rect id="label8_bg" class="for_r8" x="630.63997" y="181.1849" width="266.73333" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label8" class="for_r8" text-anchor="end" x="892.70667" y="191.6349" dy="5.949999999999999">ML develops utility-maximisers: 0.30</text>
+<rect id="label9_bg" class="for_r9" x="811.01674" y="-2.81667" width="311.16668" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label9" class="for_r9" text-anchor="end" x="1117.51667" y="7.63333" dy="5.949999999999999">ML eventually wiped out by alien AGI: 0.04</text>
+<rect id="label10_bg" class="for_r10" x="919.9667" y="78.65624" width="202.21666" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label10" class="for_r10" text-anchor="end" x="1117.51667" y="89.10625" dy="5.949999999999999">Pure ML good ending: 0.01</text>
+<rect id="label11_bg" class="for_r11" x="841.51674" y="181.12083" width="280.66668" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label11" class="for_r11" text-anchor="end" x="1117.51667" y="191.57083" dy="5.949999999999999">utility-maximisers are misaligned: 0.15</text>
+<rect id="label12_bg" class="for_r12" x="866.38338" y="310.30209" width="255.79999" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label12" class="for_r12" text-anchor="end" x="1117.51667" y="320.75208" dy="5.949999999999999">utility-maximisers are aligned: 0.15</text>
+<rect id="label13_bg" class="for_r13" x="488.81334" y="551.91042" width="183.75" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label13" class="for_r13" text-anchor="end" x="667.89667" y="562.36042" dy="5.949999999999999">We win against ML: 0.05</text>
+<rect id="label14_bg" class="for_r14" x="482.77999" y="403.64584" width="189.78333" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label14" class="for_r14" text-anchor="end" x="667.89667" y="414.09583" dy="5.949999999999999">Terminator scenario: 0.35</text>
+<rect id="label15_bg" class="for_r15" x="602.92336" y="486.73208" width="294.45" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label15" class="for_r15" text-anchor="end" x="892.70667" y="497.18208" dy="5.949999999999999">We build aligned utility-maximisers: 0.01</text>
+<rect id="label16_bg" class="for_r16" x="736.47335" y="568.20504" width="160.9" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label16" class="for_r16" text-anchor="end" x="892.70667" y="578.655" dy="5.949999999999999">We rot on Earth: 0.04</text>
+<rect id="label17_bg" class="for_r17" x="159.88666" y="652.4667" width="287.86666" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label17" class="for_r17" text-anchor="end" x="443.08667" y="662.91667" dy="5.949999999999999">ML utility-maximiser is misaligned: 0.10</text>
+<rect id="label18_bg" class="for_r18" x="184.75333" y="542.36874" width="263" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label18" class="for_r18" text-anchor="end" x="443.08667" y="552.81875" dy="5.949999999999999">ML utility-maximiser is aligned: 0.10</text>
+<rect id="label19_bg" class="for_r19" x="492.06334" y="652.4667" width="180.5" height="23.4" rx="4" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label19" class="for_r19" text-anchor="end" x="667.89667" y="662.91667" dy="5.949999999999999">Paperclip scenario: 0.10</text>
+</g>
+</g></svg>

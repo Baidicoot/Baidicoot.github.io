@@ -16,7 +16,7 @@ footer {
 }
 
 #content {
-    max-width: 40rem;
+    max-width: max(90%, 40rem);
     margin: 1rem auto;
     font-family: 'Roboto Slab', serif;
     color: #000;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <link rel="stylesheet" href="../../assets/highlight.css">
+    <title>Current Predictions for AI Doom @ Aidan's Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+</head>
+<body>
+    <div id="content">
+        <h1><a href="../../index.html">Aidan Ewart</a></h1>
+        <p><em>Updated 04/05/2023</em></p>
+        <hr>
+        <p><em>I thought I should formalise some (VERY vague, VERY WIP) predictions for The Future wrt. AI doom, as I think my intuitions diverge from the mainstream slightly (but not significantly).</em></p>
+<h1>Current Predictions for AI Doom</h1>
+<p><strong>TL;DR</strong>: I don't think that the current ML/DL paradigm will result in robust, honest-to-Yudkowsky utility-maximisers, but I do think that a power-shift where power is given to ML-based AGI is likely in the coming decade. I also think that <em>building</em> a full-blown Yudkowskyian utility-maximiser is a Hard problem, which we might not see, even with AGI oversight, for a century or more. This presents a problem for the long-term future of Humanity, as we will no longer be in control when our dutch-bookable, heuristic-driven AGI overlords either attempt to create utility-maximising AGI, or when they encounter (alien) utility-maximisers.</p>
+<p>Here's a Handy Diagram for my current predictions, which the rest of the post will attempt to justify:</p>
+<p><img src="../../assets/img/ai_doom.svg" alt="Predictions for AI Doom"></img></p>
+<h2>On <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">P</mi><mo stretchy="false">(</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathbb">P</span></span><span class="mopen">(</span></span></span></span>ML-Based Utility Maximisers<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mclose">)</span></span></span></span></h2>
+<p>In &quot;<a href="https://www.alignmentforum.org/posts/pdaGN6pQyQarFHXF4/reward-is-not-the-optimization-target">Reward is not the Optimisation Target</a>&quot;, Alex Turner sets out a convincing argument that RL-based deep-learning systems will <em>not</em> turn out to be reward-maximisers, at least not with some serious hard work by RL engineers. Moreover, this model (&quot;shard theory&quot;) seems to be quite predictive: <a href="https://www.lesswrong.com/posts/iCfdcxiyr2Kj8m8mT/the-shard-theory-of-human-values">human preferences</a>, as optimised by evolution, seem to follow the predictions of shard theory, and shard-theoretic goals have been observed <a href="https://www.alignmentforum.org/posts/cAC4AXiNC5ig6jQnc/understanding-and-controlling-a-maze-solving-net">in the wild</a>.</p>
+<p>In light of this, I have updated to think that building a utility-maximiser is significantly <em>harder</em> than I previously thought; currently systems for targeting ML models are centered around RL, and I believe that the arguments Turner provides generalise to most near-future autonomous learning systems; it seems that the space of functions that ML systems as a whole can represent is dominated by heuristic-driven approximations to utility-maximisers, in line with shard theory.</p>
+<h2>Surely this is good, though, right?</h2>
+<p>Conditional on shard theory being a good model, alignment seems a lot <em>easier</em>; we no longer have to care about outer alignment, and instead should focus on &quot;growing good cognition inside of the trained [RL] agent&quot;, which, as <em>more</em> of an engineering problem, seems significantly more tractible. Moreover, likelihoods of disasterous outcomes such as deceptive alignment seem much reduced if all ML agents will turn out to be fuzzy-preferenced and heuristic-driven. However, in the slightly longer term, we may encounter some of the problems associated with said fuzzy-preferenced, heuristic-driven models, most notably being the possibility of a <a href="https://www.alignmentforum.org/posts/GNhMPAWcfBCASy8e6/a-central-ai-alignment-problem-capabilities-generalization">sharp left turn</a>. [TODO: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">P</mi><mo stretchy="false">(</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathbb">P</span></span><span class="mopen">(</span></span></span></span>sharp left turn <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span></span></span></span> ML agent<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mclose">)</span></span></span></span>]</p>
+<p>If, however, we manage to build a sufficently aligned ML agent with approximately-human values, we may run into bother when the ML agent recursively self-improves into more optimising computational models (such as things-that-are-closer-to-utility-maximisers). I can see two obvious failure modes when a mostly-aligned</p>
+
+    </div>
+<script src="../../assets/main.js"></script>
+<footer>
+    <iframe height="50" src="https://george.gh0.pw/embed.cgi?baidicoot" style="border:none;width:100%"></iframe>
+</footer>
+</body>
+</html>
