@@ -16,7 +16,7 @@ footer {
 }
 
 #content {
-    max-width: max(90%, 40rem);
+    max-width: min(80%, 50rem);
     margin: 1rem auto;
     font-family: 'Roboto Slab', serif;
     color: #000;
@@ -29,6 +29,12 @@ img {
 .half {
     width: 50%;
     float: left;
+}
+
+.figure {
+    width: min(75%, 25rem);
+    margin: auto;
+    display: block;
 }
 
 img:hover {
