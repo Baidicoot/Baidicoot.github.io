@@ -13,16 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="content">
+    <div id="header">
         <h1><a href="index.html">Aidan Ewart</a></h1>
-        <p><em>Updated 02-05-2025</em></p>
+        <p><em>Created 03-05-2025</em></p>
         <hr>
+    </div>
+    <div id="content">
         <div class="flex-profile">
 <div class="profile-pic">
 <img src="assets/img/profile.jpg">
 </div>
 <div class="about">
-<p>Hi! I’m an undergrad studying maths at the University of Bristol, and I work on making AI systems safe in my free time. I donate &gt;10% of my income to charity, and think <a href="https://www.givingwhatwecan.org/pledge">you probably should to</a>.<br>
+<p>Hi! I’m an undergrad studying maths at the University of Bristol, and I work on making AI systems safe in my free time. I donate &gt;10% of my income to charity, and think <a href="https://www.givingwhatwecan.org/pledge">you probably should too</a>.<br>
 <br>
 Previously, I’ve interned at <a href="https://haizelabs.com/">Haize Labs</a>, and been a Research Scholar at <a href="https://www.matsprogram.org/">MATS</a>, in both cases mostly working on adversarial robustness.</p>
 <ul class="icon-text-list">
@@ -36,37 +38,59 @@ Previously, I’ve interned at <a href="https://haizelabs.com/">Haize Labs</a>, 
 </div>
 </div>
 <!-- ## [Microblog](microblog.html) -->
+<h2>ML Microblog</h2>
+<p><em>Where I disagree with people about machine learning.</em></p>
+<p><div class="microblog-posts"></div></p>
 <h2>Posts</h2>
-<p>
+<!-- <div class="link-item"><a href="microblog.html">Machine Learning Microblog</a></div> -->
+
                 <div class="link-item">
                     <a href="posts/izf/index.html">The λ-Calculus, in Set Theory, in Coq</a>
-                    <span class="link-date">04-06-2020</span>
+                    <span class="link-date">(04-06-2020)</span>
                     <p class="link-description">Formalizing different logics within set theory and type theory.</p>
                 </div>
-            </p>
+            
 <h2>Select Publications</h2>
-<p><a href="https://arxiv.org/abs/2309.08600">Sparse Autoencoders Find Highly Interpretable Features in Language Models</a><br>
+<div class="link-item">
+<a href="https://arxiv.org/abs/2309.08600">Sparse Auto-encoders Find Highly Interpretable Features in Language Models</a><span class="link-date">(ICLR 2024)</span>
+<p class="link-description">
 Hoagy Cunningham*, <strong>Aidan Ewart</strong>*, Logan Riggs*, Robert Huben, Lee Sharkey<br>
-<em>Demonstrates an unsupervised method for finding human-understandable decompositions of LM activations.</em></p>
-<p><a href="https://arxiv.org/abs/2407.15549">Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs</a><br>
+<em>Demonstrates an unsupervised method for finding human-understandable decompositions of LM activations.</em>
+</p>
+</div>
+<div class="link-item">
+<a href="https://arxiv.org/abs/2407.15549">Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs</a><span class="link-date">(SoLaR @ NeurIPS 2024)</span>
+<p class="link-description">
 <strong>Aidan Ewart</strong>*, Abhay Sheshadri*, Phillip Guo, Aengus Lynch, Cindy Wu, Vivek Hebbar, Henry Sleight, Asa Cooper Stickland, Ethan Perez, Dylan Hadfield-Menell, Stephen Casper<br>
-<em>Develops a new method for adverserially training LMs.</em></p>
-<p><a href="https://arxiv.org/abs/2402.16835">Eight Methods to Evaluate Robust Unlearning in LLMs</a><br>
+<em>Develops a new method for adversarially training LMs.</em>
+</p>
+</div>
+<div class="link-item">
+<a href="https://arxiv.org/abs/2402.16835">Eight Methods to Evaluate Robust Unlearning in LLMs</a><span class="link-date">(Preprint)</span>
+<p class="link-description">
 Aengus Lynch*, Phillip Guo*, <strong>Aidan Ewart</strong>*, Stephen Casper, Dylan Hadfield-Menell<br>
-<em>Rigorously evaluates the machine unlearning done in Eldan and Russinovich (2023).</em></p>
-<h2>Select Interesting/Funny Projects</h2>
-<ul>
-<li><p><a href="https://github.com/Baidicoot/att">A Type Theory/Theorem Prover</a><br>
-<em>A type theory which is technically usable as a proof checker, although I wouldn’t recommend it.</em></p></li>
-<li><p><a href="https://github.com/Baidicoot/bijou">A Compiler for a Functional Programming Language</a><br>
-<em>Compiles a high-level functional language to C using continuation passing style.</em></p></li>
-<li><p><a href="https://github.com/Baidicoot/set-theory-prover">A Theorem-Proving ‘Extension’ for Lua</a><br>
-<em>An almost-usable proof assistant!</em></p></li>
-<li><p><a href="https://github.com/Baidicoot/aqa-compiler">A Compiler for AQA Pseudocode to AQA Assembly</a><br>
-<em>There was a question on my A-level asking me to manually compile to a simplified ARM assembly, so obviously the correct response was to write a compiler targeting it instead.</em></p></li>
-</ul>
-<!-- - [A Compiler for an ML-Style Language](https://github.com/Baidicoot/mini) -->
-<!-- - [A Reverse Polish Notation Calculator (plus $\lambda$s)](https://github.com/Baidicoot/rpncalc-v4) -->
+<em>Develops methodology and techniques for adversarially evaluating unlearning in LLMs.</em>
+</p>
+</div>
+<h2>Interesting/Funny Projects</h2>
+<div class="link-item">
+<a href="https://github.com/Baidicoot/bijou">A Compiler for a Functional Programming Language</a><span class="link-date">(Jul 2022)</span>
+<p class="link-description">Compiles a high-level functional language to C using continuation passing style.</p>
+</div>
+<div class="link-item">
+<a href="https://github.com/Baidicoot/set-theory-prover">A Theorem-Proving 'Extension' for Lua</a><span class="link-date">(Apr 2022)</span>
+<p class="link-description">An almost-usable proof assistant!</p>
+</div>
+<div class="link-item">
+<a href="https://github.com/Baidicoot/aqa-compiler">A Compiler for AQA Pseudocode to AQA Assembly</a><span class="link-date">(Mar 2021)</span>
+<p class="link-description">There was a question on my A-level asking me to manually compile to a simplified ARM assembly, so obviously the correct response was to write a compiler targeting it instead.</p>
+</div>
+<div class="link-item">
+<a href="https://github.com/Baidicoot/att">A Type Theory/Theorem Prover</a><span class="link-date">(Jan 2021)</span>
+<p class="link-description">A type theory which is technically usable as a proof checker, although I wouldn't recommend it.</p>
+</div>
+<!-- [A Compiler for an ML-Style Language](https://github.com/Baidicoot/mini) -->
+<!-- [A Reverse Polish Notation Calculator (plus $\lambda$s)](https://github.com/Baidicoot/rpncalc-v4) -->
 <!-- ## Art
 - [Gallery](gallery.html) -->
     </div>

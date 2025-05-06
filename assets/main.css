@@ -5,6 +5,24 @@ body {
     position: relative;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+}
+
+#header {
+    max-width: min(80%, 50rem);
+    margin: 1rem auto;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #000;
+}
+
+#header hr {
+    background-color: gray;
+}
+
 #content {
     max-width: min(80%, 50rem);
     margin: 1rem auto;
@@ -65,7 +83,7 @@ img:hover {
 
 .about {
     flex: 1;
-    margin: 1rem;
+    margin: 0rem 1rem;
 }
 
 a {
@@ -101,17 +119,19 @@ code, pre {
     }
   }
 
-.microblog-posts {
-    margin-top: 2em;
+.horizontal-rule {
+    border-top: 1px solid #eee;
 }
 
-.microblog-post {
+.microblog-posts:child {
     margin-bottom: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid #eee;
 }
 
-.microblog-post:last-child {
+.microblog-posts:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
     border-bottom: none;
 }
 
@@ -123,6 +143,20 @@ code, pre {
 
 .microblog-post .post-content {
     line-height: 1.6;
+}
+
+.microblog-post h2 {
+    margin: 0.5em 0;
+    font-size: 1.4em;
+}
+
+.microblog-post h2 a {
+    color: #4040A0;
+    text-decoration: none;
+}
+
+.microblog-post h2 a:hover {
+    color: #606080;
 }
 
 .link-item {
